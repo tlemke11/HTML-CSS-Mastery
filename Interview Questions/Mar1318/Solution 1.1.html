@@ -1,5 +1,6 @@
 <!--
-    Change program to allow for a number of buttons to be prepopulated based on user input
+    Create 5 buttons that have labels from Button 0 through Button 4
+    When a user clicks on the button, an alert should show stating the button was clicked!
 -->
 <html>
 <head>
@@ -7,21 +8,15 @@
         function alertButtonClicked(buttonId){
             alert("You clicked on Button " + buttonId + "!");
         }
-
-        function createButtons(numberOfButtons){
-            //get body element
-
-            //for loop to create buttons x number of times
-        }
     </script>
 </head>
 
 <body>
-    <button id="1" onclick="alertButtonClicked(this.id)">Button 1</button> <!--you could also enable this with event listeners-->
-    <button id="2" onclick="alertButtonClicked(this.id)">Button 2</button>
-    <button id="3" onclick="alertButtonClicked(this.id)">Button 3</button>
-    <button id="4" onclick="alertButtonClicked(this.id)">Button 4</button>
-    <button id="5" onclick="alertButtonClicked(this.id)">Button 5</button>
+<button id="0" onclick="alertButtonClicked(this.id)">Button 0</button> <!--you could also enable this with event listeners-->
+<button id="1" onclick="alertButtonClicked(this.id)">Button 1</button>
+<button id="2" onclick="alertButtonClicked(this.id)">Button 2</button>
+<button id="3" onclick="alertButtonClicked(this.id)">Button 3</button>
+<button id="4" onclick="alertButtonClicked(this.id)">Button 4</button>
 </body>
 
 </html>

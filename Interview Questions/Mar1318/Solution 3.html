@@ -1,0 +1,68 @@
+<!--
+    Style the buttons as given, consider multiple things such as padding, layout, color, and casing
+    https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius
+    https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+    https://developer.mozilla.org/en-US/docs/Web/CSS/gradient
+    https://developer.mozilla.org/en-US/docs/Web/CSS/@media
+-->
+<html>
+<head>
+    <script>
+        function alertButtonClicked(buttonId) {
+            alert("You clicked on Button " + buttonId + "!");
+        }
+    </script>
+
+
+    <style>
+        /* this should be in a separate css document but to limit the amount of files it is being include here */
+
+        body {
+            font-size: 7pt;
+        }
+
+        .blue-gradient-button {
+            text-transform: uppercase;
+            font-size:2em;
+            background: linear-gradient(#007bad, #837b7d);
+            color: #ffffff;
+            box-shadow: 1px 1px 10px black;
+            border: 0.15em solid white;
+            padding: 0.4em 0.8em;
+            border-color: white;
+            border-style: solid;
+            border-radius: .5em;
+            white-space: nowrap;
+            margin: 5px;
+        }
+
+
+        @media only screen and (max-width: 320px){
+            .blue-gradient-button {
+                font-size: .5em;
+            }
+        }
+
+        @media only screen and (min-width: 321px) and (max-width: 768px){
+            .blue-gradient-button {
+                font-size: 2em;
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+<div class="daddy">
+    <button class="blue-gradient-button" id="0" onclick="alertButtonClicked(this.id)">Button 0</button>
+    <!--you could also enable this with event listeners-->
+    <button class="blue-gradient-button" id="1" onclick="alertButtonClicked(this.id)">Button 1</button>
+    <button class="blue-gradient-button" id="2" onclick="alertButtonClicked(this.id)">Button 2</button>
+    <button class="blue-gradient-button" id="3" onclick="alertButtonClicked(this.id)">Button 3</button>
+    <button class="blue-gradient-button" id="4" onclick="alertButtonClicked(this.id)">Button 4</button>
+</div>
+</body>
+
+</html>
