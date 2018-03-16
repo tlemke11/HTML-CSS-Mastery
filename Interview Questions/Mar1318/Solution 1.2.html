@@ -11,40 +11,38 @@
     https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onclick
     https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
     https://developer.mozilla.org/en-US/docs/Web/Events
+    https://stackoverflow.com/questions/9756705/how-to-pass-id-to-function-after-event-listener-click
 -->
 <html>
-<head>
-    <script>
-        document.addEventListener("DOMContentLoaded", function(){
-            init();
-        });
+    <head>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                init();
+            });
 
-        function init(){
-            createButtons(5);
-        }
-
-        function alertButtonClicked(buttonId){
-            alert("You clicked on Button " + buttonId + "!");
-        }
-
-        function createButtons(numberOfButtons){
-            var button;
-
-            //need to put the child element here
-            for(var index = 1; index <= numberOfButtons; index++){
-                button = document.createElement('button');
-                button.id = index;
-                button.addEventListener("click", function(){alertButtonClicked(button.id);});
-                document.body.appendChild(button);
+            function init(){
+                var numButtons = prompt("How many buttons would you like?");
+                createButtons(numButtons);
             }
-        }
 
+            function alertButtonClicked(button){
+                alert("You clicked on Button " + this.id + "!");
+            }
 
-    </script>
-</head>
+            function createButtons(numberOfButtons){
+                var button;
 
-<body>
-
-</body>
-
+                //need to put the child element here
+                for(var index = 0; index < numberOfButtons; index++){
+                    button = document.createElement('button');
+                    button.id = index;
+                    button.addEventListener("click", alertButtonClicked);
+                    button.innerText = "Button " + index;
+                    document.body.appendChild(button);
+                }
+            }
+        </script>
+    </head>
+    <body>
+    </body>
 </html>

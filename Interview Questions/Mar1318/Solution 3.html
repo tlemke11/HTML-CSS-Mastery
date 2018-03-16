@@ -38,14 +38,14 @@
 
 
         @media only screen and (max-width: 320px){
-            .blue-gradient-button {
-                font-size: .5em;
+            body {
+                font-size: 5pt;
             }
         }
 
         @media only screen and (min-width: 321px) and (max-width: 768px){
-            .blue-gradient-button {
-                font-size: 2em;
+            body {
+                font-size: 6pt;
             }
         }
 
@@ -55,14 +55,12 @@
 </head>
 
 <body>
-<div class="daddy">
-    <button class="blue-gradient-button" id="0" onclick="alertButtonClicked(this.id)">Button 0</button>
     <!--you could also enable this with event listeners-->
+    <button class="blue-gradient-button" id="0" onclick="alertButtonClicked(this.id)">Button 0</button>
     <button class="blue-gradient-button" id="1" onclick="alertButtonClicked(this.id)">Button 1</button>
     <button class="blue-gradient-button" id="2" onclick="alertButtonClicked(this.id)">Button 2</button>
     <button class="blue-gradient-button" id="3" onclick="alertButtonClicked(this.id)">Button 3</button>
     <button class="blue-gradient-button" id="4" onclick="alertButtonClicked(this.id)">Button 4</button>
-</div>
 </body>
 
 </html>

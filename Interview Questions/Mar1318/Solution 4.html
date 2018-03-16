@@ -1,14 +1,52 @@
 /*
 
-You have a player that can move within a 2d space that is 20x20 in area
+You have a player that can move within a 2d space that is 20x20 in area.
+The player starts at 0,0
 Your player can only move one space at a time (N, S, E, W).
-The player can only enter a box where the
+The player can only enter a box where the digits of the row is greater than 8.
 
+i.e. (20,20) = 2+0+2+0 = 4 = valid move
+     (15, 5) = 1+5+5 = 11 = invalid move
 
+Find out how many blocks the player can reach in this instance?
 
+Answer = 45 (9+8+7+6+5+4+3+2+1)
 
-
-
-
+Can you write a program that varies the area and the threshold?
 
 */
+
+//start at 0,0 and move right
+
+//if the sum of the digits is less than x, mark your current spot as passable
+
+//repeat
+
+//once you can no longer go right - move down
+
+//if moving down is not valid, increment the y axis and start fresh
+
+//if it is a valid move, keep moving right and down again until you stop
+
+//then go to the next y axis
+
+
+<script>
+    function matrixCounter(rows, columns, threshold){
+        var m = rows;
+        var n = columns;
+        var x = threshold;
+
+        var matrix = createMatrix(m, n);
+
+    }
+
+    function createMatrix(m, n){
+        //create the matrix here
+
+    }
+</script>
+
+
+
+
