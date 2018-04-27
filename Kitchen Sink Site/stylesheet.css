@@ -1,3 +1,11 @@
+
+/*Font Selectors */
+.cursive {
+    font-family: cursive;
+}
+.the-real-zero{
+    font-feature-settings: "zero";
+}
 .bold {
     font-weight: bold;
 }
