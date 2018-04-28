@@ -6,6 +6,9 @@
 .the-real-zero{
     font-feature-settings: "zero";
 }
+.make-it-ugly{
+    font-kerning: none;
+}
 .bold {
     font-weight: bold;
 }
