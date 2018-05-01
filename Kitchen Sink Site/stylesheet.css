@@ -16,3 +16,7 @@
 .italic {
     font-style:italic;
 }
+
+.line-height {
+    line-height: 50px;
+}
