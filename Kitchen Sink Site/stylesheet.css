@@ -20,3 +20,16 @@
 .line-height {
     line-height: 50px;
 }
+
+.font {
+    font-family: cursive;
+    font-feature-settings: unset;
+    font-kerning: none;
+    font-language-override: revert;
+    font-size: 12px;
+    font-size-adjust: revert;
+    font-stretch: ultra-condensed;
+    font-style: oblique;
+    font-synthesis: weight;
+    font-variant: small-caps;
+}
