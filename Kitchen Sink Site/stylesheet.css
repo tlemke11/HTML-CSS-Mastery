@@ -22,6 +22,7 @@
 }
 
 .font {
+    /* TODO -put actual shorthand here*/
     font-family: cursive;
     font-feature-settings: unset;
     font-kerning: none;
@@ -32,4 +33,8 @@
     font-style: oblique;
     font-synthesis: weight;
     font-variant: small-caps;
+}
+
+.font-stretch{
+    font-stretch: extra-condensed;
 }
