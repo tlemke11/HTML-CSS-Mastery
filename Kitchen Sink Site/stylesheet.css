@@ -38,3 +38,9 @@
 .font-stretch{
     font-stretch: extra-condensed;
 }
+
+/* Background Selectors */
+.background-clip{
+    background-clip: padding-box;
+    background: chartreuse;
+}
