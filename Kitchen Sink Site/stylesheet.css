@@ -44,3 +44,9 @@
     background-clip: padding-box;
     background: chartreuse;
 }
+
+.background-attachment{
+    background-attachment: fixed;
+    background-image:url(http://via.placeholder.com/350x150);
+    min-height:150px;
+}
