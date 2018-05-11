@@ -91,5 +91,9 @@
     color:red;
 }
 
+:matches(p,span) .matches:hover{
+    color:red;
+}
+
 
 /*End Pseudo-Selectors*/
