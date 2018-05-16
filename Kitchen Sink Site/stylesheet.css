@@ -97,3 +97,12 @@
 
 
 /*End Pseudo-Selectors*/
+
+
+/*Pseudo-Elements*/
+
+.after:after{
+    content:"but"
+}
+
+/*End Pseudo-Elements*/
